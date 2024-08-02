@@ -1,4 +1,4 @@
-package com.whoo.level02.normal;
+package practice.class1.chap03.normal;
 
 public class RandomMaker {
     public static int randomNumber(int min, int max){

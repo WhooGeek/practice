@@ -1,5 +1,5 @@
-package com.whoo.level01.basic;
-import com.whoo.level01.basic.Calculator;
+package practice.class1.chap01.basic;
+import practice.class1.chap01.basic.Calculator;
 public class Application {
     public static void main(String[] args) {
         Calculator cal = new Calculator();

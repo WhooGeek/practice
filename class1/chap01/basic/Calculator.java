@@ -1,4 +1,4 @@
-package com.whoo.level01.basic;
+package practice.class1.chap01.basic;
 
 public class Calculator {
     public static void main(String[] args) {
