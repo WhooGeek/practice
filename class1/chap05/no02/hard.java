@@ -1,4 +1,4 @@
-package com.whoo.no02;
+package com.whoo.chap05.no02;
 import java.util.Scanner;
 public class hard {
     public static void main(String[] args) {

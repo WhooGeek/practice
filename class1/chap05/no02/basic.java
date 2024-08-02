@@ -1,4 +1,4 @@
-package com.whoo.no02;
+package com.whoo.chap05.no02;
 
 public class basic {
     public static void main(String[] args) {
