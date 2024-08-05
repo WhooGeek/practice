@@ -1,4 +1,4 @@
-package practice.class1.chap04.no2;
+package com.whoo.chap04.no2;
 
 import java.util.Scanner;
 
@@ -10,12 +10,20 @@ public class advanced02Application {
         String a = sc.nextLine();
         System.out.println("숫자를 입력하세요 : ");
         int b = sc.nextInt();
+        b = b % 26;
 
-        for(int i = 0; i <= a.length(); i++) {
-            if(a.charAt(i) >= 'a' && a.charAt(i) <= 'z' && a.charAt(i) >= 'A' && a.charAt(i) <= 'Z') {
-
-                int result = (int) a.charAt(i) + 3;
-
+        for (int i = 0; i < a.length() ; i++){
+            int c = (int) a.charAt(i) + b;
+            if( c >= 97 + b && c <= 119 + b ){
+                System.out.print((char) c + " ");
+            } else if(c >= 120 + b && c <= 122 + b){
+                c = c-26;
+                System.out.print((char) c + " ");
+            } else if (c >= 65 + b&& c <= 87 + b) {
+                System.out.print((char) c + " ");
+            } else if (c >= 88 + b && c <= 90 + b ) {
+                c = c-26;
+                System.out.print((char) c + " ");
             }
         }
 
