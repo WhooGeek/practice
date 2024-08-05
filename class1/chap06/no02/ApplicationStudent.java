@@ -24,14 +24,21 @@ public class ApplicationStudent {
             int math = sc.nextInt();
 
             student[a] =  new StudentDTO(grade, classroom, name, kor, eng, math);
-            a++;
+
 
             System.out.println("계속 추가할 겁니까? (y/n)");
+            a++;
             if (sc.next().equals("n")) {
                 for(int i = 0; i < a; i++){
                     System.out.println(student[i].getinformation());
                 };
                 break label;
+            } else if (a == 9) {
+                System.out.println("리스트에 빈 공간이 없습니다.");
+                for(int i = 0; i < a; i++){
+                    System.out.println(student[i].getinformation());
+                };
+                break;
             }
         }while(true);
 
