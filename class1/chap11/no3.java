@@ -37,7 +37,7 @@ public class no3{
             }
 
         }catch (Exception e){
-            System.out.println(e.getMessage());
+            System.out.println("오류 : " + e.getMessage());
 
         }finally{
             if(output != null){
