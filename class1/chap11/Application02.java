@@ -8,7 +8,7 @@ import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class no2 {
+public class Application02 {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         BufferedInputStream input = null;
