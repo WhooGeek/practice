@@ -36,7 +36,7 @@ public class advanced02 {
             String number = sc.nextLine();
 
             if (number.length() != 4){  // 입력받은 4자리수 문자열 길이가 4일 경우에만 다음 단계로 진행
-                System.out.println("4자리수를 입력해주세요");
+                System.out.print("4자리수를 입력해주세요 : ");
 
             }else{
 
@@ -56,6 +56,7 @@ public class advanced02 {
                             b++; // 다른 자리에 겹치는 수가 있다면 볼 증가
                         }
                     }
+
                 }
                 if (s == 4){ //스트라이크 = 4 인 경우 정답
                     System.out.println("정답입니다.");
@@ -67,7 +68,7 @@ public class advanced02 {
                     break;
                 }
 
-                System.out.println("아쉽네요" + s + "S" + b + "b" + "입니다."); // 맞추지 못했을때 출력 문자열
+                System.out.println("아쉽네요 " + s + "S " + b + "b " + "입니다."); // 맞추지 못했을때 출력 문자열
                 s = 0;// 각 변수 초기화 및 카운트 변경
                 b = 0;
                 cnt --;

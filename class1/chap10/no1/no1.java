@@ -21,6 +21,7 @@ public class no1 {
 
         }catch(ZeroException e){
             System.out.println(e.getMessage());
+
         }catch(NumberException e){
             System.out.println(e.getMessage());
         }
