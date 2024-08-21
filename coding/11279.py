@@ -5,7 +5,7 @@ input = sys.stdin.readline
 
 heap = []
 
-# 출력을 모아둘 리스트
+# 결과 리스트
 results = [] # 시간 초과가 계속 나서 리스트에 모아놓고 한번에 출력하는 방법을 선택
 
 limit = int(input().strip())
