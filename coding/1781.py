@@ -1,20 +1,20 @@
-from queue import PriorityQueue
+import heapq
 
 a = int(input())
 
-que = PriorityQueue()
-
-cnt = 0
-result = 0
+arr = []
 
 for i in range(a):
-    b, c = map(int, input().split())
-    que.put((b, -c))
+    d, c = map(int, input().split())
+    arr.append((d, c))
 
-while not que.empty():
-    p, v = que.get()
-    if p > cnt:
-        result += -v
-        cnt += 1    
-    
-print(result)
+arr.sort() # d 기준 정렬
+
+result = []
+for d, c in arr:
+    heapq.heappush(result, c)
+
+    if len(result) > d:
+        heapq.heappop(result) # C가 낮은게 pop 됨
+
+print(sum(result))
